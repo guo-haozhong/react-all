@@ -1,5 +1,5 @@
-import { combineReducers } from 'redux'
-import { createStore, applyMiddleware } from '../kredux/index'
+// import { combineReducers } from 'redux'
+import { createStore, applyMiddleware,combineReducers } from '../kredux/index'
 import isPromise from "is-promise"
 
 function countReducer(state = 0, action) {

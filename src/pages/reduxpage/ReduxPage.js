@@ -19,7 +19,7 @@ export default class ReduxPage extends Component {
             setTimeout(() => {
                 dispatch({ type: "ADD", payload: 1 })
             }, 1000)
-        })
+        })        
     }
     promiseMinus = () => {
         store.dispatch(

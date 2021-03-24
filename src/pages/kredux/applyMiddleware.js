@@ -9,7 +9,7 @@ export default function applyMiddleware(...middlewares) {
             dispatch: (action, ...args) => dispatch(action, ...args)
         }
 
-        //()=>{} 和()=>()的区别
+        //map注意要返回值
         const middlewaresChain = middlewares.map((middleware) => {
             return middleware(middlewareApi)
         })
