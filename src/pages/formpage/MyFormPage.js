@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Form ,{Field} from '../../components/my-filed-form'
+import Form ,{Field} from '../../components/my-field-form'
 import Input from '../../components/Input'
 
 const nameRules = {required: true, message: "请输入姓名！"};
