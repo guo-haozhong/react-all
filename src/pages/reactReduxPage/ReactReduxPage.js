@@ -10,7 +10,7 @@ class ReactReduxPage extends Component {
             <div>
                 <h3>ReactReduxPage</h3>
                 <p>{count}</p>
-                {userInfo ? <p>{userInfo}</p> : null}
+                {userInfo.name ? <p>{JSON.stringify(userInfo)}</p> : null}
 
                 <button onClick={add}> add </button>
                 <button onClick={minus}> minus </button>

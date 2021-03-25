@@ -13,12 +13,12 @@ function countReducer(state = 0, action) {
     }
 }
 
-function userReducer(state = "", action) {
+function userReducer(state = {}, action) {
     switch (action.type) {
         case "GETINFO":
-            return action.payload
+            return { name: action.payload }
         case "CLEARINFO":
-            return ""
+            return {}
         default:
             return state;
     }
