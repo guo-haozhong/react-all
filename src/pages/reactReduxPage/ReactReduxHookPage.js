@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { useSelector, useDispatch } from '../kReactRedux/index'
+import { useSelector, useDispatch } from '../../kReactRedux/index'
 export default function ReactReduxHookPage({ props }) {
     const dispatch = useDispatch();
     const add = useCallback(() => {
