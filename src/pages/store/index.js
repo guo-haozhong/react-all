@@ -1,5 +1,5 @@
 // import { combineReducers } from 'redux'
-import { createStore, applyMiddleware,combineReducers } from '../kredux/index'
+import { createStore, applyMiddleware, combineReducers } from '../kredux/index'
 import isPromise from "is-promise"
 
 function countReducer(state = 0, action) {
@@ -7,7 +7,18 @@ function countReducer(state = 0, action) {
         case "ADD":
             return state + 1
         case "MINUS":
-            return state - action.payload || 1;
+            return state - (action.payload || 1);
+        default:
+            return state;
+    }
+}
+
+function userReducer(state = "", action) {
+    switch (action.type) {
+        case "GETINFO":
+            return action.payload
+        case "CLEARINFO":
+            return ""
         default:
             return state;
     }
@@ -15,7 +26,8 @@ function countReducer(state = 0, action) {
 
 const store = createStore(
     combineReducers({
-        count: countReducer
+        count: countReducer,
+        user: userReducer
     }),
     applyMiddleware(thunk, promise, logger)
 )
