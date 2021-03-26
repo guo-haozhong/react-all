@@ -60,22 +60,27 @@ function updateTextCompoent(vnode) {
   return node;
 }
 
+// 直接执行函数，拿到子节点
 function updateFunctionComponent(vnode) {
   const { type, props } = vnode;
-  const vvnode = type(props);
-  const node = createNode(vvnode);
+  const childvnode = type(props);
+  //child-vnode
+  const node = createNode(childvnode);
   return node;
 }
 
+// 类组件
+// 先实例化，再执行render函数才能拿到子节点
 function updateClassComponent(vnode) {
   const { type, props } = vnode;
   const instance = new type(props);
-  const vvnode = instance.render();
-  const node = createNode(vvnode);
+  const childvnode = instance.render();
+  // child -> node
+  const node = createNode(childvnode);
   return node;
 }
 
-// 最假的吧，但是做的也是遍历子节点
+// “协调”
 function reconcileChildren(parentNode, children) {
   let newChildren = Array.isArray(children) ? children : [children];
 
