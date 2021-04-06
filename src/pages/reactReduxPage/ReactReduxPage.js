@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { bindActionCreators, connect } from '../../kReactRedux/index';
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+// import { bindActionCreators, connect } from '../../kReactRedux/index';
 
 class ReactReduxPage extends Component {
     render() {
