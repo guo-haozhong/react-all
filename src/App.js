@@ -12,11 +12,11 @@ import ReactReduxHookPage from './pages/reactReduxPage/ReactReduxHookPage'
 import ReactReduxPage from './pages/reactReduxPage/ReactReduxPage'
 
 //手写react-router路由
-
+import ReactRouterPage from './pages/routerPage/index'
 export default function App() {
     return (
         <div>
-            <ReactReduxPage />
+            <ReactRouterPage />
         </div>
     )
 }

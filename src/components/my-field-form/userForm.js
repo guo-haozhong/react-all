@@ -52,7 +52,7 @@ class FormStore {
         this.fieldEntities.push(entity)
         return () => {
             this.fieldEntities = this.fieldEntities.filter(
-                (_entity) => _entity != entity
+                (_entity) => _entity !== entity
             )
             delete this.store[entity.props.name]
         }
