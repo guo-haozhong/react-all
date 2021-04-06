@@ -12,7 +12,6 @@ import {
     withRouter,
     Prompt,
 } from "react-router-dom";
-import "./index.less"
 import HomePage from "./HomePage";
 import UserPage from "./UserPage";
 import LoginPage from "./LoginPage";
