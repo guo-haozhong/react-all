@@ -19,6 +19,7 @@
  */
 //手写react核心代码
 import {jsx} from './pages/reactPage/ReactPage'
-import ReactDOM from './kreact/react-dom'
+// import ReactDOM from './kreact/react-dom'
+import ReactDOM from './kreact/react-dom-fiber'
 
 ReactDOM.render(jsx,document.getElementById("root"))

@@ -17,9 +17,7 @@ function FunctionComponent(props) {
             <button
                 onClick={() => {
                     console.log("omg"); //sy-log
-                }}>
-                click
-        </button>
+                }}>click</button>
         </div>
     );
 }
@@ -30,7 +28,7 @@ export const jsx = (
         <a href="https://juejin.cn/">掘金</a>
         <FunctionComponent name="function" />
         <ClassComponent name="class" />
-        
+
         <>
             <h1>哈哈哈</h1>
             <h2>呵呵呵</h2>
