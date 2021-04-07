@@ -23,7 +23,8 @@ import {
   useRouteMatch,
   useParams,
   withRouter,
-  // Redirect
+  Redirect,
+  Prompt
 } from "../../kReactRouterDom/";
 
 import HomePage from "./HomePage";
@@ -60,44 +61,44 @@ export default function ReactRouterPage() {
     )
 }
 
-@withRouter
-class Product extends Component {
-  render() {
-    const {match} = this.props;
-    const {params, url} = match;
-    const {id} = params;
-    return (
-      <div>
-        <h1>Search-{id}</h1>
-        <Link to={url + "/detail"}>详情</Link>
-        <Route path={url + "/detail"} component={Detail} />
-      </div>
-    );
-  }
-}
-
-// function Product() {
-//     const [confirm, setConfirm] = useState(true);
-//     const match = useRouteMatch();
-//     console.log("match", match);
-//     const { params, url } = match;
-//     const { id } = params;
+// @withRouter
+// class Product extends Component {
+//   render() {
+//     const {match} = this.props;
+//     const {params, url} = match;
+//     const {id} = params;
 //     return (
-//         <div>
-//             <h1>Search-{id}</h1>
-//             <Link to={url + "/detail"}>详情</Link>
-//             <Route path={url + "/detail"} component={Detail} />
-
-//             <Prompt
-//                 when={confirm}
-//                 // message="Are you sure you want to leave?"
-//                 message={(location) => {
-//                     return "Are you sure you want to leave-fun";
-//                 }}
-//             />
-//         </div>
+//       <div>
+//         <h1>Search-{id}</h1>
+//         <Link to={url + "/detail"}>详情</Link>
+//         <Route path={url + "/detail"} component={Detail} />
+//       </div>
 //     );
+//   }
 // }
+
+function Product() {
+    const [confirm, setConfirm] = useState(true);
+    const match = useRouteMatch();
+    console.log("match", match);
+    const { params, url } = match;
+    const { id } = params;
+    return (
+        <div>
+            <h1>Search-{id}</h1>
+            <Link to={url + "/detail"}>详情</Link>
+            <Route path={url + "/detail"} component={Detail} />
+
+            <Prompt
+                when={confirm}
+                // message="Are you sure you want to leave?"
+                message={(location) => {
+                    return "Are you sure you want to leave-fun";
+                }}
+            />
+        </div>
+    );
+}
 
 
 function Detail(props) {
