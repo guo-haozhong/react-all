@@ -45,16 +45,16 @@ class TrafficLightItem extends Component {
         }
         this.fn()
     }
-    normal = async (color, delay) => {
-        return new Promise((res) => {
+    normal = (color, delay) => {
+        return new Promise((resolve) => {
             this.setCurColor(color)
             setTimeout(() => {
-                res("")
+                resolve("")
             }, delay)
         })
     }
-    twinkle = async (color, delay) => {
-        return new Promise((res) => {
+    twinkle = (color, delay) => {
+        return new Promise((resolve) => {
             let cur = color
             let flag = true
             let interval = setInterval(() => {
@@ -71,7 +71,7 @@ class TrafficLightItem extends Component {
             setTimeout(() => {
                 flag = false
                 clearInterval(interval)
-                res("")
+                resolve("")
             }, delay)
         })
     }
