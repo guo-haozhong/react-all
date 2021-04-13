@@ -9,9 +9,12 @@ import {Provider} from 'react-redux'
 import App from './App'
 import store from './store/'
 // import { Provider } from './kReactRedux/'
+
+//demo示例
+import Demo from './demo/index'
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Demo />
   </Provider>,
   document.getElementById('root')
 );
