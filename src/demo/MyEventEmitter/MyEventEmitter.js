@@ -21,6 +21,7 @@ class MyEventEmitter {
         }
 
         this.eventMap[eventName].push(callback)
+        console.log('this.eventMap', this.eventMap);
     }
 
     emit(eventName, ...args) {
@@ -40,8 +41,6 @@ class MyEventEmitter {
     }
 }
 
-
-
 const myEvent = new MyEventEmitter();
 myEvent.on("test", (args) => {
     console.log('监听test事件', args);
@@ -52,3 +51,7 @@ myEvent.on("test1", (...args) => {
 
 myEvent.emit("test", "data1");
 myEvent.emit("test1", "data1", 'data2');
+
+myEvent.off('test', (args) => {
+    console.log('卸载test事件', args);
+})
