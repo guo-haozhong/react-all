@@ -5,7 +5,7 @@ import MyEventEmitter from '../demo/MyEventEmitter/MyEventEmitter'
 export default function App() {
     return (
         <div>
-            <TrafficLightHook/>
+            <TrafficLight/>
         </div>
     )
 }

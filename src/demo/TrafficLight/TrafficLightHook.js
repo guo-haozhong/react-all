@@ -23,6 +23,7 @@ function TrafficLightItem(props) {
                 const normaltime = cur.duration - cur.twinkleDuration
                 await normal(cur.color, normaltime) //正常亮灯-不闪烁的时间
                 await twinkle(cur.color, cur.twinkleDuration)//正常亮灯-最后的几秒闪烁
+    
             }
             fn()
         }
