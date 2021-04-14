@@ -12,7 +12,7 @@ class MyEventEmitter {
     }
     on(eventName, callback) {
         //callback必须是函数
-        if (typeof callback !== 'function') {
+        if (!(callback instanceof Function)) {
             throw new Error('callback is not a funtion')
         }
         //判断eventName事件对应的队列是否存在
@@ -43,11 +43,11 @@ class MyEventEmitter {
 
 
 const myEvent = new MyEventEmitter();
-myEvent.on("test", (...args) => {
+myEvent.on("test", (args) => {
     console.log('监听test事件', args);
 });
 myEvent.on("test1", (...args) => {
-    console.log('监听test1事件', args);
+    console.log('监听test1事件', ...args);
 });
 
 myEvent.emit("test", "data1");
