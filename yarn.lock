@@ -1270,6 +1270,17 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@ice/store@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.npm.taobao.org/@ice/store/download/@ice/store-1.4.2.tgz#b7f10e48389cdff06fd7814514708be9c586e000"
+  integrity sha1-t/EOSDic3/Bv14FFFHCL6cWG4AA=
+  dependencies:
+    immer "^6.0.2"
+    lodash.isfunction "^3.0.9"
+    react-redux "^7.2.0"
+    redux "^4.0.5"
+    redux-thunk "^2.3.0"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/@istanbuljs/load-nyc-config/download/@istanbuljs/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -5875,6 +5886,11 @@ immer@8.0.1:
   resolved "https://registry.npm.taobao.org/immer/download/immer-8.0.1.tgz?cache=0&sync_timestamp=1611143247110&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
   integrity sha1-nHPbaD4rOXXEJPsFcq9YiYd65lY=
 
+immer@^6.0.2:
+  version "6.0.9"
+  resolved "https://registry.npm.taobao.org/immer/download/immer-6.0.9.tgz#b9dd69b8e69b3a12391e87db1e3ff535d1b26485"
+  integrity sha1-ud1puOabOhI5HofbHj/1NdGyZIU=
+
 import-cwd@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/import-cwd/download/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
@@ -7207,6 +7223,11 @@ lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
+lodash.isfunction@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.npm.taobao.org/lodash.isfunction/download/lodash.isfunction-3.0.9.tgz#06de25df4db327ac931981d1bdb067e5af68d051"
+  integrity sha1-Bt4l302zJ6yTGYHRvbBn5a9o0FE=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -9683,7 +9704,7 @@ react-is@^17.0.1:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-17.0.1.tgz?cache=0&sync_timestamp=1615824950987&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-is%2Fdownload%2Freact-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha1-WzUxvXamRaTJ+25pPtNkGeMwEzk=
 
-react-redux@^7.2.2:
+react-redux@^7.2.0, react-redux@^7.2.2:
   version "7.2.3"
   resolved "https://registry.npm.taobao.org/react-redux/download/react-redux-7.2.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-redux%2Fdownload%2Freact-redux-7.2.3.tgz#4c084618600bb199012687da9e42123cca3f0be9"
   integrity sha1-TAhGGGALsZkBJofankISPMo/C+k=
