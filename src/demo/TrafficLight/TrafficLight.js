@@ -14,9 +14,9 @@ import React, { Component, PureComponent } from 'react'
 export default class TrafficLight extends Component {
     render() {
         const lights = [
-            { color: "red", duration: 8000, twinkleDuration: 4000 },
-            { color: "green", duration: 10000, twinkleDuration: 6000 },
-            { color: "yellow", duration: 4000, twinkleDuration: 2000 }
+            { color: "red", duration: 20000, twinkleDuration: 5000 },
+            { color: "green", duration: 20000, twinkleDuration: 5000 },
+            { color: "yellow", duration: 10000, twinkleDuration: 0 }
         ]
         return (
             <div>
