@@ -13,6 +13,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # demo目录下主要展示的功能
 * 利用React实现一个交通信号灯控制器
-* 实现一个发布-订阅模型
 * @ice/store全局状态管理库的示例
 
